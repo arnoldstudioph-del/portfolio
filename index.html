@@ -514,7 +514,156 @@
 .project-link:hover {
   color: #baff00;
 }
-    
+    /* OAKDALE CASE STUDY */
+.oakdale-case-study {
+  position: relative;
+  padding: 140px 50px;
+  background: #0b0d0d;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.case-study-inner {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.case-study-header {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 100px;
+  margin-bottom: 100px;
+}
+
+.case-number {
+  color: #555955;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.case-study-header h2 {
+  font-size: clamp(42px, 5vw, 76px);
+  line-height: 1;
+  letter-spacing: -3px;
+  margin-bottom: 28px;
+}
+
+.case-study-header h2 span {
+  color: #baff00;
+}
+
+.case-study-header p {
+  max-width: 760px;
+  color: #a9aaa6;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.case-block {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 100px;
+  padding: 80px 0;
+  border-top: 1px solid rgba(255,255,255,0.10);
+}
+
+.case-block-label {
+  color: #baff00;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.case-block-content h3 {
+  font-size: clamp(30px, 3vw, 46px);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  margin-bottom: 22px;
+}
+
+.case-block-content p {
+  max-width: 800px;
+  color: #a9aaa6;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+.case-study-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 35px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: white;
+}
+
+.case-analysis {
+  background:
+    linear-gradient(135deg, rgba(186,255,0,0.025), transparent 45%);
+}
+
+.case-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 45px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.case-metrics > div {
+  padding: 28px;
+  border-right: 1px solid rgba(255,255,255,0.12);
+}
+
+.case-metrics > div:first-child {
+  padding-left: 0;
+}
+
+.case-metrics > div:last-child {
+  border-right: none;
+}
+
+.case-metrics span {
+  display: block;
+  color: #7d817c;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.case-metrics strong {
+  color: #f5f5f2;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.case-result {
+  margin-top: 40px;
+  padding: 100px 0;
+  border-top: 1px solid rgba(255,255,255,0.10);
+}
+
+.case-result h2 {
+  max-width: 1000px;
+  font-size: clamp(48px, 6vw, 90px);
+  line-height: 0.98;
+  letter-spacing: -4px;
+  margin-top: 30px;
+}
+
+.case-result h2 span {
+  color: #baff00;
+}
+
+.case-result p {
+  max-width: 760px;
+  color: #a9aaa6;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-top: 35px;
+}
     /* MOBILE */
     @media (max-width: 800px) {
       nav {
@@ -612,6 +761,68 @@
       .location-label {
         display: none;
       }
+
+      /* OAKDALE CASE STUDY - MOBILE */
+
+.oakdale-case-study {
+    padding: 90px 24px;
+}
+
+.case-study-header {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+.case-study-header h2 {
+    font-size: 44px;
+    letter-spacing: -2px;
+}
+
+.case-study-header p {
+    font-size: 15px;
+}
+
+.case-block {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 60px 0;
+}
+
+.case-block-content h3 {
+    font-size: 30px;
+}
+
+.case-block-content p {
+    font-size: 15px;
+}
+
+.case-study-image {
+    margin-top: 25px;
+}
+
+.case-metrics {
+    grid-template-columns: 1fr;
+}
+
+.case-metrics > div {
+    padding: 22px 0;
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.case-metrics > div:last-child {
+    border-bottom: none;
+}
+
+.case-result {
+    padding: 70px 0;
+}
+
+.case-result h2 {
+    font-size: 46px;
+    letter-spacing: -2px;
+}
     }
   </style>
 </head>
@@ -834,7 +1045,7 @@
             <span>Recovery Analysis</span>
           </div>
 
-          <a href="#" class="project-link">
+          <a href="#oakdale-case-study" class="project-link">
             VIEW CASE STUDY ↗
           </a>
 
@@ -958,6 +1169,243 @@
   </div>
 
 </section>
+<!-- OAKDALE CASE STUDY -->
+<section class="oakdale-case-study" id="oakdale-case-study">
 
+  <div class="case-study-inner">
+
+    <div class="section-label">
+      OAKDALE ADU / CASE STUDY
+    </div>
+
+    <div class="case-study-header">
+
+      <div>
+        <div class="case-number">01 — PROJECT CONTROLS</div>
+      </div>
+
+      <div>
+        <h2>
+          From garage shell to a
+          <span>controlled construction plan.</span>
+        </h2>
+
+        <p>
+          A construction scheduling and project controls case study for the
+          conversion of an existing 2-car garage into a 360 SF accessory
+          dwelling unit.
+        </p>
+
+        <div class="project-meta">
+          <span>CPM Scheduling</span>
+          <span>ProjectLibre</span>
+          <span>Resource Planning</span>
+          <span>Variance Analysis</span>
+          <span>Schedule Recovery</span>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- PROJECT OVERVIEW -->
+    <div class="case-block">
+
+      <div class="case-block-label">
+        01 / PROJECT OVERVIEW
+      </div>
+
+      <div class="case-block-content">
+
+        <h3>2101 Oakdale St — Garage to ADU Conversion</h3>
+
+        <p>
+          The project involves converting an existing 2-car garage into a
+          360 SF residential ADU. The scheduling exercise develops the
+          construction sequence from pre-construction and demolition through
+          architectural build-back, MEP rough-ins, inspections, finishes,
+          testing, and final turnover.
+        </p>
+
+        <img
+          src="oakdale-plan.png"
+          alt="2101 Oakdale Street existing garage and proposed ADU floor plan"
+          class="case-study-image"
+        >
+
+      </div>
+
+    </div>
+
+
+    <!-- BASELINE SCHEDULE -->
+    <div class="case-block">
+
+      <div class="case-block-label">
+        02 / CPM SCHEDULE
+      </div>
+
+      <div class="case-block-content">
+
+        <h3>Baseline Schedule & Critical Path</h3>
+
+        <p>
+          The project schedule was developed using a Work Breakdown Structure,
+          activity durations, predecessor relationships, resource assignments,
+          milestones, and CPM logic. Critical activities and available float
+          were reviewed to understand which activities controlled project
+          completion.
+        </p>
+
+        <img
+          src="oakdale-gantt.png"
+          alt="Oakdale ADU ProjectLibre CPM Gantt schedule"
+          class="case-study-image"
+        >
+
+      </div>
+
+    </div>
+
+
+    <!-- NETWORK LOGIC -->
+    <div class="case-block">
+
+      <div class="case-block-label">
+        03 / NETWORK LOGIC
+      </div>
+
+      <div class="case-block-content">
+
+        <h3>Construction Sequence & Dependencies</h3>
+
+        <p>
+          Network logic was used to verify activity relationships and the
+          construction sequence. Finish-to-Start relationships were used for
+          sequential work, while controlled Start-to-Start relationships and
+          lags were introduced where overlapping work was technically feasible.
+        </p>
+
+        <img
+          src="oakdale-network.png"
+          alt="Oakdale ADU CPM network diagram and resource analysis"
+          class="case-study-image"
+        >
+
+      </div>
+
+    </div>
+
+
+    <!-- DELAY ANALYSIS -->
+    <div class="case-block case-analysis">
+
+      <div class="case-block-label">
+        04 / VARIANCE ANALYSIS
+      </div>
+
+      <div class="case-block-content">
+
+        <h3>A 2-day critical delay threatened project completion.</h3>
+
+        <p>
+          Electrical Rough-In was planned for 2 working days but required
+          4 working days due to additional electrical work identified during
+          execution. Because the activity was critical with zero total float,
+          the additional 2 working days directly affected the forecast
+          completion date.
+        </p>
+
+        <div class="case-metrics">
+
+          <div>
+            <span>BASELINE TURNOVER</span>
+            <strong>24 NOV 2026</strong>
+          </div>
+
+          <div>
+            <span>PRE-RECOVERY FORECAST</span>
+            <strong>26 NOV 2026</strong>
+          </div>
+
+          <div>
+            <span>SCHEDULE IMPACT</span>
+            <strong>+2 DAYS</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- RECOVERY -->
+    <div class="case-block case-analysis">
+
+      <div class="case-block-label">
+        05 / RECOVERY
+      </div>
+
+      <div class="case-block-content">
+
+        <h3>Recovering the schedule through controlled fast tracking.</h3>
+
+        <p>
+          Remaining critical-path activities were reviewed for technical
+          dependency and resource capacity. Safe overlap opportunities were
+          identified during the interior fit-out phase. Selected relationships
+          were revised using Start-to-Start logic with appropriate lag while
+          maintaining required inspections and construction dependencies.
+        </p>
+
+        <div class="case-metrics">
+
+          <div>
+            <span>RECOVERY METHOD</span>
+            <strong>FAST TRACKING</strong>
+          </div>
+
+          <div>
+            <span>ADDITIONAL MANPOWER</span>
+            <strong>NONE</strong>
+          </div>
+
+          <div>
+            <span>POST-RECOVERY TURNOVER</span>
+            <strong>24 NOV 2026</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- RESULT -->
+    <div class="case-result">
+
+      <div class="case-block-label">
+        RESULT
+      </div>
+
+      <h2>
+        Two working days recovered.
+        <span>Baseline completion restored.</span>
+      </h2>
+
+      <p>
+        The exercise demonstrates WBS development, CPM scheduling,
+        resource planning, baseline management, schedule updating,
+        variance analysis, critical-path assessment, recovery planning,
+        and schedule forecasting.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
 </body>
 </html>
