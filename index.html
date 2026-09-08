@@ -598,6 +598,36 @@
   background: white;
 }
     /* SHANNON PROJECT OVERVIEW */
+    /* SHANNON CONSTRUCTION PROGRESS */
+
+.shannon-progress-gallery {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 24px;
+  margin-top: 45px;
+}
+
+.shannon-progress-main img,
+.shannon-progress-side img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.shannon-progress-main img {
+  height: 620px;
+}
+
+.shannon-progress-side {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 24px;
+}
+
+.shannon-progress-side img {
+  height: 298px;
+}
 
 .shannon-overview {
   display: block;
@@ -1571,24 +1601,30 @@
 
   </div>
 
-  <img
-    src="shannon-structure.png"
-    alt="Shannon 7-Unit Apartment structural construction works"
-    class="case-study-image"
-  >
+  <div class="shannon-progress-gallery">
 
-  <img
-    src="shannon-reinforcement.png"
-    alt="Shannon 7-Unit Apartment reinforcement works"
-    class="case-study-image"
-  >
+  <div class="shannon-progress-main">
+    <img
+      src="shannon-structure.png"
+      alt="Shannon 7-Unit Apartment structural construction works"
+    >
+  </div>
 
-  <img
-    src="shannon-masonry.png"
-    alt="Shannon 7-Unit Apartment masonry construction works"
-    class="case-study-image"
-  >
+  <div class="shannon-progress-side">
 
+    <img
+      src="shannon-reinforcement.png"
+      alt="Shannon 7-Unit Apartment reinforcement works"
+    >
+
+    <img
+      src="shannon-masonry.png"
+      alt="Shannon 7-Unit Apartment masonry construction works"
+    >
+
+  </div>
+
+</div>
 </div>
   </div>
 
