@@ -238,10 +238,155 @@
       letter-spacing: 3px;
     }
 
+/* ABOUT SECTION */
+.about {
+  position: relative;
+  padding: 140px 50px;
+  background: #0b0d0d;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.about-inner {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.section-label {
+  color: #baff00;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  margin-bottom: 70px;
+}
+
+.section-label::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 1px;
+  background: #baff00;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 100px;
+  align-items: start;
+}
+
+.about-number {
+  color: #555955;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.about-content h2 {
+  font-size: clamp(42px, 5vw, 76px);
+  line-height: 1;
+  letter-spacing: -3px;
+  max-width: 850px;
+  margin-bottom: 40px;
+}
+
+.about-content h2 span {
+  color: #baff00;
+}
+
+.about-text {
+  max-width: 780px;
+  color: #a9aaa6;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.about-text p {
+  margin-bottom: 22px;
+}
+
+.proof-points {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 60px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+}
+
+.proof-item {
+  padding: 28px 25px 10px 0;
+  border-right: 1px solid rgba(255,255,255,0.12);
+}
+
+.proof-item:not(:first-child) {
+  padding-left: 28px;
+}
+
+.proof-item:last-child {
+  border-right: none;
+}
+
+.proof-title {
+  color: #f5f5f2;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.proof-number {
+  display: block;
+  color: #baff00;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+    
     /* MOBILE */
     @media (max-width: 800px) {
       nav {
         padding: 0 24px;
+
+        .about {
+  padding: 90px 24px;
+}
+
+.section-label {
+  margin-bottom: 45px;
+}
+
+.about-grid {
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.about-content h2 {
+  font-size: 44px;
+  letter-spacing: -2px;
+}
+
+.about-text {
+  font-size: 15px;
+}
+
+.proof-points {
+  grid-template-columns: 1fr;
+  margin-top: 45px;
+}
+
+.proof-item {
+  padding: 22px 0;
+  border-right: none;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.proof-item:not(:first-child) {
+  padding-left: 0;
+}
+
+.proof-item:last-child {
+  border-bottom: none;
+}
       }
 
       .nav-links {
@@ -340,6 +485,83 @@
     </div>
 
   </section>
+
+  <!-- ABOUT SECTION -->
+<section class="about" id="about">
+
+  <div class="about-inner">
+
+    <div class="section-label">
+      ABOUT ME
+    </div>
+
+    <div class="about-grid">
+
+      <div class="about-number">
+        02 — ABOUT
+      </div>
+
+      <div class="about-content">
+
+        <h2>
+          From design intent to
+          <span>construction delivery.</span>
+        </h2>
+
+        <div class="about-text">
+
+          <p>
+            I'm Arnold Consigo, a Licensed Architect and Construction Project
+            Manager based in the Philippines, with experience across architectural
+            design, construction documentation, site coordination, estimating,
+            progress monitoring, and project delivery.
+          </p>
+
+          <p>
+            My work bridges design and construction. I understand projects not
+            only from the drawing side, but also from the realities of site
+            execution, sequencing, coordination, cost, and schedule.
+          </p>
+
+          <p>
+            I am also expanding my work into construction scheduling, project
+            controls, estimating, and remote project support for international teams.
+          </p>
+
+        </div>
+
+        <div class="proof-points">
+
+          <div class="proof-item">
+            <span class="proof-number">01</span>
+            <div class="proof-title">
+              Licensed<br>Architect
+            </div>
+          </div>
+
+          <div class="proof-item">
+            <span class="proof-number">02</span>
+            <div class="proof-title">
+              Architecture +<br>Construction Experience
+            </div>
+          </div>
+
+          <div class="proof-item">
+            <span class="proof-number">03</span>
+            <div class="proof-title">
+              Project Management +<br>Project Controls
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 </body>
 </html>
