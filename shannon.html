@@ -632,17 +632,46 @@ width: 100%;
 }
 
 .shannon-overview {
-  display: block;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  column-gap: 100px;
+  row-gap: 20px;
+}
+
+.shannon-overview .case-block-label {
+  grid-column: 1;
+  grid-row: 1 / span 2;
 }
 
 .shannon-overview > h3 {
-  margin-top: 25px;
+  grid-column: 2;
+  grid-row: 1;
+  margin-top: 0;
+}
+
+.shannon-overview > p {
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: 0;
+}
+
+.shannon-overview .case-metrics {
+  grid-column: 1 / -1;
+  margin-top: 40px;
+}
+
+.shannon-overview .case-study-image {
+  grid-column: 1 / -1;
+}
+
+.shannon-overview > h3 {
+  margin-top: 0;
   max-width: 900px;
 }
 
 .shannon-overview > p {
   max-width: 850px;
-  margin-top: 20px;
+  margin-top: 0;
   line-height: 1.8;
 }
 
