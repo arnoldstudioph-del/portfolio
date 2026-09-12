@@ -816,9 +816,8 @@ width: 100%;
 .project-info h3 {
   font-size: 22px;
 }
-      }
 
-      .nav-links {
+        .nav-links {
         display: none;
       }
 
